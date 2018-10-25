@@ -1,9 +1,6 @@
 package com.ludens.gugudan;
-
 public class Gugudan {
 	
-	private int dan;
-
 	public int getDan() {
 		return dan;
 	}
@@ -27,8 +24,8 @@ public class Gugudan {
 		System.out.println(dan + " X  7 = " + dan*7);
 		System.out.println(dan + " X  8 = " + dan*8);
 		System.out.println(dan + " X  9 = " + dan*9);
-	}
 
+	}
 }
 
 
