@@ -3,7 +3,6 @@ package com.ludens.gugudan;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Gugudan gdan = new Gugudan(2);
 

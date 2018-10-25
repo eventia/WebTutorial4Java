@@ -1,6 +1,8 @@
 package com.ludens.gugudan;
 public class Gugudan {
 	
+	int dan;
+	
 	public int getDan() {
 		return dan;
 	}
