@@ -15,7 +15,10 @@ public class Gugudan {
 		super();
 		this.dan = dan;
 	}
-	
+
+	public Gugudan() {
+	}
+
 	public void gugucalc(){
 		System.out.println(dan + " X  1 = " + dan*1);
 		System.out.println(dan + " X  2 = " + dan*2);
