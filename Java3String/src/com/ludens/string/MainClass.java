@@ -1,6 +1,7 @@
 package com.ludens.string;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainClass {
 
@@ -20,10 +21,32 @@ public class MainClass {
 		
 		// ¸®½ºÆ®
 		ArrayList pitches = new ArrayList();
-//		ArrayList<String> pitches = new ArrayList<String>();
-		pitches.add("138");
+		pitches.add("hello");
 		pitches.add("142");
 		System.out.println(pitches.get(1));
+		System.out.println(pitches.size());
+		System.out.println(pitches.contains("142"));
+		System.out.println(pitches.remove("142"));
+		
+		// Á¦³Ê¸¯
+		ArrayList<String> aList = new ArrayList<String>();
+		aList.add("hi");
+		aList.add("LuCo");
+		
+		String sayhello = (String) pitches.get(0);
+		String sayhi = aList.get(0);
+		
+		// ¸Ê (key : value)
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("apple", "»ç°ú");
+		map.put("oragne", "¿À·»Áö");
+		map.put("pen", "Ææ");
+		
+		System.out.println(map.get("pen"));
+		map.containsKey("pen");
+		map.remove("pen");
+		map.size();
+		
 		
 		
 	}
