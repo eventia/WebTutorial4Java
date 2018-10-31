@@ -2,20 +2,17 @@ package com.ludens.etc;
 
 public class Test extends Thread {
 	int seq;
-
 	public Test(int seq) {
 		this.seq = seq;
 	}
-	
 	public void run(){
-		System.out.println(this.seq + "¹ø ¾²·¹µå°¡ ½ÃÀÛµÇ¾ú½À´Ï´Ù.");
+		System.out.println(this.seq+" ì“°ë ˆë“œê°€ ì‹œì‘ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		try {
 			Thread.sleep(1000);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		System.out.println(this.seq + "¹ø ¾²·¹µå°¡ ³¡³µ½À´Ï´Ù.");
-		
+		System.out.println(this.seq+" ì“°ë ˆë“œê°€ ëë‚¬ìŠµë‹ˆë‹¤.");
 	}
 	
 	
