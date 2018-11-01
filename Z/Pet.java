@@ -1,8 +1,10 @@
 package com.ludens.etc;
 
 public class Pet {
-	static int count = 0; 
 	
+	static int count = 0;
+	String name;
+
 	public static int getCount() {
 		return count;
 	}
@@ -10,8 +12,6 @@ public class Pet {
 	public static void setCount(int count) {
 		Pet.count = count;
 	}
-
-	String name;
 
 	public String getName() {
 		return name;
@@ -23,9 +23,6 @@ public class Pet {
 
 	public Pet() {
 		super();
-		this.count = this.count+1;
+		this.count = this.count + 1;
 	}
-	
-	
-
 }

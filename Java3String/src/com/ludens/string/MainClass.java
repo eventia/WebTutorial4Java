@@ -46,9 +46,6 @@ public class MainClass {
 		map.containsKey("pen");
 		map.remove("pen");
 		map.size();
-		
-		
-		
 	}
-
 }
+
