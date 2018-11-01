@@ -4,7 +4,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
+
 		// Exception 예외처리
 		int c;
 		try {
@@ -20,8 +20,6 @@ public class MainClass {
 
 		
 		// thread 쓰레드
-=======
->>>>>>> 635557b496860ac3a9aab91e49807b1b6de3f2c2
 		for(int i=0; i<10; i++) {
 			Thread t = new Test(i);
 			t.start();
