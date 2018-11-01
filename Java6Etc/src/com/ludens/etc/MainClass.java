@@ -24,7 +24,7 @@ public class MainClass {
 		}
 
 		
-		// thread 쓰레드 1 
+		// thread 쓰레드
 		for(int i=0; i<10; i++) {
 			Thread t = new Test(i);
 			t.start();
