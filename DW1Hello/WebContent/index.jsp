@@ -23,6 +23,7 @@
 		alert(document.forms[0].title.name);
 	</script> 
 -->
+
 <script>
 	function formCheck() {
 	    var title = document.forms[0].title.value;     
@@ -57,7 +58,6 @@
 	        return false;            
 	    }
 	}
-
 </script>
 
 </body>
