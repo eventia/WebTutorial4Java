@@ -1,4 +1,4 @@
-package com.luco.hello;
+package com.lucoweb.hi;
 
 import java.text.DateFormat;
 import java.util.Date;
