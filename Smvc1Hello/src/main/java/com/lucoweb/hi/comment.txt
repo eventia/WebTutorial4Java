@@ -11,13 +11,13 @@
 3.1. CMD(Shell) 에서 명령
 
 mysql -uroot -p
-CREATE DATABASE myFirstBoard CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE MYPDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user scott@localhost IDENTIFIED BY 'tiger';
-grant all privileges on myFirstBoard.* to scott@localhost;
+grant all privileges on MYPDB.* to scott@localhost;
 
 3.2. WorkBench 에서 실행
 
-use myFirstBoard;
+use MYPDB;
 CREATE table `myFirstBoard`(
     M1ID INT(4) auto_increment ,
     M1AUTHOR VARCHAR(20),
@@ -27,4 +27,5 @@ CREATE table `myFirstBoard`(
     M1PDATE DATETIME,
     PRIMARY KEY (`M1ID`)
 ) ENGINE=innodb DEFAULT CHARSET=utf8;
+
 
