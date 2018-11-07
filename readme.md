@@ -44,8 +44,9 @@ c:/dev
 1. Spring Legacy 프로젝트 생성 후 실행
 2. home.jsp 수정
 2.1. 한글 깨짐 방지 UTF-8
-
+<pre><code>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+</pre></code>
 
 2.2. table 태그 사용으로 게시판 모양 만들기
 
@@ -54,12 +55,10 @@ c:/dev
 3.1. CMD(Shell) 에서 명령
 <pre>
 <code>
-
 mysql -uroot -p
 CREATE DATABASE MYPDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user scott@localhost IDENTIFIED BY 'tiger';
 grant all privileges on MYPDB.* to scott@localhost;
-
 </pre>
 </code>
 
@@ -67,7 +66,6 @@ grant all privileges on MYPDB.* to scott@localhost;
 
 <pre>
 <code>
-
 use MYPDB;
 CREATE table `myFirstBoard`(
     M1ID INT(4) auto_increment ,
@@ -78,6 +76,5 @@ CREATE table `myFirstBoard`(
     M1PDATE DATETIME,
     PRIMARY KEY (`M1ID`)
 ) ENGINE=innodb DEFAULT CHARSET=utf8;
-
 </pre>
 </code>
