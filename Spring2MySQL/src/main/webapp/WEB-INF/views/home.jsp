@@ -6,6 +6,7 @@
 <%@ page session="false" %>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Home</title>
 </head>
 <body>
@@ -69,6 +70,14 @@
   국무부는 북미고위급 회담의 취소 사유를 따로 언급하지 않았다. 이에 따라 하루 사이에 북미 간에 무슨 일이 일어났는지에 대한 그 배경에 관심이 집중되고 있다.
   </p>
 </div>
+
+
+
+<form action="buy_ticket_card">
+  고객아이디 : <input type="text" name="consumerId"> <br/>
+  티켓구매수 : <input type="text" name="amount"> <br/>
+  <input type="submit" value="구매"><br/>
+</form>
 
 
 </body>
