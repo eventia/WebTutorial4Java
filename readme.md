@@ -52,13 +52,21 @@ c:/dev
 3. mySql 로 DB 생성(myfirstboard)
 
 3.1. CMD(Shell) 에서 명령
+<pre>
+<code>
 
 mysql -uroot -p
 CREATE DATABASE MYPDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user scott@localhost IDENTIFIED BY 'tiger';
 grant all privileges on MYPDB.* to scott@localhost;
 
+</pre>
+</code>
+
 3.2. WorkBench 에서 실행
+
+<pre>
+<code>
 
 use MYPDB;
 CREATE table `myFirstBoard`(
@@ -70,3 +78,6 @@ CREATE table `myFirstBoard`(
     M1PDATE DATETIME,
     PRIMARY KEY (`M1ID`)
 ) ENGINE=innodb DEFAULT CHARSET=utf8;
+
+</pre>
+</code>
