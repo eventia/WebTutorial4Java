@@ -64,8 +64,7 @@ grant all privileges on MYPDB.* to scott@localhost;
 
 3.2. WorkBench 에서 실행
 
-<pre>
-<code>
+<pre><code>
 use MYPDB;
 CREATE table `myFirstBoard`(
     M1ID INT(4) auto_increment ,
@@ -76,12 +75,12 @@ CREATE table `myFirstBoard`(
     M1PDATE DATETIME,
     PRIMARY KEY (`M1ID`)
 ) ENGINE=innodb DEFAULT CHARSET=utf8;
-</pre>
-</code>
+</code></pre>
+
 
 
 4. pom.xml 수정 - dependency 추가
-<pre><code>
+<pre>
    <!-- JDBC Template -->
 
     <!-- MySQL -->
@@ -123,7 +122,7 @@ CREATE table `myFirstBoard`(
         <artifactId>spring-test</artifactId>
         <version>${org.springframework-version}</version>
     </dependency>
-</code></pre>
+</pre>
    
 5. DB 데이터 저장
 
