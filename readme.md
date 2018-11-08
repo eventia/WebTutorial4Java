@@ -80,7 +80,7 @@ CREATE table `myFirstBoard`(
 
 
 4. pom.xml 수정 - dependency 추가
-<pre>
+```
    <!-- JDBC Template -->
 
     <!-- MySQL -->
@@ -122,7 +122,7 @@ CREATE table `myFirstBoard`(
         <artifactId>spring-test</artifactId>
         <version>${org.springframework-version}</version>
     </dependency>
-</pre>
+```
    
 5. DB 데이터 저장
 
