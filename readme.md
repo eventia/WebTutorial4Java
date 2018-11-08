@@ -81,7 +81,7 @@ CREATE table `myFirstBoard`(
 
 
 4. pom.xml 수정 - dependency 추가
-
+<code><pre>
    <!-- JDBC Template -->
 
     <!-- MySQL -->
@@ -123,12 +123,11 @@ CREATE table `myFirstBoard`(
         <artifactId>spring-test</artifactId>
         <version>${org.springframework-version}</version>
     </dependency>
-   
+</pre></code>
    
 5. DB 데이터 저장
 
-<pre><code>
-
+<code><pre>
 create database LOCALDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 grant all privileges on LOCALDB.* to scott@localhost;
 use LOCALDB;
@@ -143,4 +142,4 @@ CREATE table `myFirstBoard`(
     PRIMARY KEY (`M1ID`)
 ) ENGINE=innodb DEFAULT CHARSET=utf8;
 
-</code></pre>
+</pre></code>
