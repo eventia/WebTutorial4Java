@@ -53,7 +53,7 @@ c:/dev
 3. mySql 로 DB 생성(myfirstboard)
 
 3.1. CMD(Shell) 에서 명령
-```
+```sql
 mysql -uroot -p
 CREATE DATABASE MYPDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user scott@localhost IDENTIFIED BY 'tiger';
@@ -124,7 +124,7 @@ CREATE table `myFirstBoard`(
    
 5. DB 데이터 저장
 
-```
+```sql
 create database LOCALDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 grant all privileges on LOCALDB.* to scott@localhost;
 use LOCALDB;
