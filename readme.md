@@ -123,3 +123,24 @@ CREATE table `myFirstBoard`(
         <artifactId>spring-test</artifactId>
         <version>${org.springframework-version}</version>
     </dependency>
+   
+   
+5. DB 데이터 저장
+
+<pre><code>
+
+create database LOCALDB CHARACTER SET utf8 COLLATE utf8_general_ci;
+grant all privileges on LOCALDB.* to scott@localhost;
+use LOCALDB;
+
+CREATE table `myFirstBoard`(
+    M1ID INT(4) auto_increment ,
+    M1AUTHOR VARCHAR(20),
+    M1TITLE VARCHAR(100),
+    M1TEXT VARCHAR(300),
+    M1WDATE DATETIME DEFAULT NOW(),
+    M1PDATE DATETIME,
+    PRIMARY KEY (`M1ID`)
+) ENGINE=innodb DEFAULT CHARSET=utf8;
+
+</code></pre>
