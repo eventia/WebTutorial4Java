@@ -122,7 +122,7 @@ CREATE table `myFirstBoard`(
     </dependency>
 ```
    
-5. DB 데이터 저장
+5. DB 데이터 저장, mySql
 
 ```sql
 create database LOCALDB CHARACTER SET utf8 COLLATE utf8_general_ci;
